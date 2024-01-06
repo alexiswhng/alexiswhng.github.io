@@ -75,121 +75,98 @@ nav .navbar-nav .nav-item .nav-link {
 		2. About
 --------------------------------------*/
 
-#about {
-    display: flex;
+.about {
     align-items: center;
+    border-top: 1px solid #e5ebf2;
 }
 
-#about .content-wrapper {
+.about .content-wrapper {
     flex-grow: 1; /* Allow the content wrapper to take the available space */
 }
-#about h2 {
+
+.about h2 {
     text-decoration: underline; 
 }
 
-#about .image-wrapper,
-#about .text-wrapper {
+.about .image-wrapper, #about .text-wrapper {
     width: 100%; 
     text-align: center; 
 }
 
-@media (max-width: 767px) {
-    #about .row {
+@media (max-width: 767px) {.about .row {
         flex-direction: column;
     }
 }
+
 /* Style for the image */
 .imageAboutPage {
     width: 100%; /* Make the image take the full width of its container */
     height: auto; /* Maintain the aspect ratio of the image */
     display: block; /* Remove any default inline spacing */
-    margin-bottom: 20px; /* Adjust the margin as needed */
+    margin-top: 20px;
 }
 
 /* Style for the text */
-#about p {
+.about p {
     text-align: justify; 
 }
-
 
 /*-------------------------------------
         3. Experience
 -------------------------------------*/
-#experience {
-    padding: 50px 0 100px;
+
+.experience {
+    align-items: center;
     border-top: 1px solid #e5ebf2;
-    text-align: center
+    padding: 50px;
 }
 
-#experience h2 {
+.experience h2 {
     text-decoration: underline; 
 }
 
-/* Timeline Container */
-.timeline {
-    margin: 20px 100px 20px 100px;
-    padding: 20px;
-    display: inline-block;
+.notbold{
+    font-weight: normal;
 }
 
-/* Additional text on the left */
-.left-text {
-    flex: 1; 
-    margin-right: 20px;
-}
-
-/* Timeline content container */
-.timeline-content {
-    display: flex;
-}
-
-/* Outer Layer with the timeline border */
-.outer {
-    border-left: 1.5px solid #333;
-}
-
-/* Card container */
-.card {
+.timeline-with-icons {
+    border-left: 2px solid hsl(0, 0%, 90%);
     position: relative;
-    margin: 0 0 20px 20px;
-    padding: 10px;
-    background: #333;
-    color: gray;
-    border-radius: 8px;
-    max-width: 900px;
-}
-
-.card p{
+    list-style: none;
     text-align: left;
-}
+    margin: 20px;
+    top: 40px;
+    width: 98%;
+} 
+  
+.timeline-with-icons .timeline-item {
+    position: relative;
+    text-align: left;
 
-/* Information about the timeline */
-.info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
-
-/* Title of the card */
-.title {
-    color: black;
-    text-align: center;
-}
-
-/* Timeline dot  */
-.title::before {
-    content: "";
+  
+.timeline-with-icons .timeline-item:after {
     position: absolute;
-    width: 10px;
-    height: 10px;
-    background: black;
-    border-radius: 1000px;
-    left: -28px;
-    border: 3px solid black;
+    display: block;
+
+}
+  
+.timeline-with-icons .timeline-icon {
+    position: absolute;
+    left: -48px;
+    background-color: hsl(217, 88.2%, 90%);
+    color: hsl(217, 88.8%, 35.1%);
+    border-radius: 50%;
+    height: 31px;
+    width: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
+/* .timeline-with-icons .text-muted {
+    max-width: 800px;
+} */
 
 
 
