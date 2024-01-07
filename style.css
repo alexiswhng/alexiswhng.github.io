@@ -25,10 +25,10 @@ nav .navbar-nav .nav-item .nav-link {
     color: white; 
 }
 
-
 .navbar-brand:hover,.navbar-toggler:hover, .navbar-nav .nav-item .nav-link:hover {
     color: #303233;
 }
+
 
 /*-------------------------------------
 		2. Banner
@@ -41,6 +41,7 @@ nav .navbar-nav .nav-item .nav-link {
     background-size:cover;
     position:relative;
 }
+
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
@@ -99,16 +100,16 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 /* Style for the image */
-.imageAboutPage {
-    width: 100%; /* Make the image take the full width of its container */
-    height: auto; /* Maintain the aspect ratio of the image */
-    display: block; /* Remove any default inline spacing */
-    margin-top: 20px;
+.about .row .imageAboutPage {
+    max-width: 400px; 
+    height: auto; /* Allow the height to adjust proportionally */
+    display: block;
+    margin: 0 auto;
 }
 
 /* Style for the text */
 .about p {
-    text-align: justify; 
+    text-align: center; 
 }
 
 /*-------------------------------------
@@ -134,7 +135,6 @@ nav .navbar-nav .nav-item .nav-link {
     position: relative;
     list-style: none;
     text-align: left;
-    margin: 20px;
     top: 40px;
     width: 98%;
 } 
