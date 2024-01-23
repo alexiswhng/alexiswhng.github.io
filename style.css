@@ -182,16 +182,19 @@ nav .navbar-nav .nav-item .nav-link {
     padding-top: 70px;
 }
 
-.skills {
-    align-items: center;
-    border-top: 1px solid #e5ebf2;
-    padding-top: 70px;
-}
 
 .skills h2 {
     text-decoration: underline; 
 }
 
+.skills ul {
+    columns: 2;
+    height: 150px;
+}
+
+.skills li{
+    list-style-position: inside;
+}
 
 /*-------------------------------------
         4. Projects
