@@ -196,27 +196,6 @@ nav .navbar-nav .nav-item .nav-link {
     list-style-position: inside;
 }
 
-/*-------------------------------------
-        4. Projects
--------------------------------------*/
-
-.projects{
-    align-items: center;
-    border-top: 1px solid #e5ebf2;
-    /* padding-top: 70px; */
-}
-
-.projects {
-    align-items: center;
-    border-top: 1px solid #e5ebf2;
-    padding-top: 70px;
-}
-
-.projects h2 {
-    text-decoration: underline; 
-}
-
-
 /* services section css */
 .servicesText.card {
     height: 280px;
@@ -237,10 +216,32 @@ nav .navbar-nav .nav-item .nav-link {
     border: 1px solid #CF95F3;
 }
 
+/*-------------------------------------
+        4. Projects
+-------------------------------------*/
+
+.projects{
+    align-items: center;
+    border-top: 1px solid #e5ebf2;
+    /* padding-top: 70px; */
+}
+
+.projects {
+    align-items: center;
+    border-top: 1px solid #e5ebf2;
+    padding-top: 70px;
+}
+
+.projects h2 {
+    text-decoration: underline; 
+}
+
 /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
     background-color: black;
 }
+
+
 
 /*-------------------------------------
         5. Contact Me
